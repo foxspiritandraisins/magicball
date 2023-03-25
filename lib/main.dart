@@ -77,6 +77,7 @@ void RandNum(){
     print('counter: $counter');
     print('ball number is: $ballNumber');
   }else{
+    ///random numnber until different with ballNumber
     RandNum();
   }
 }
