@@ -39,12 +39,14 @@ class Ball extends StatefulWidget {
 int ballNumber = 0;
 
 class _BallState extends State<Ball> {
-  void initState(){   ///super inherit the
+  ///prevent the RandNum() autorun every onPressed
+  void initState(){
     super.initState();
     if(ballNumber==0){
       RandNum();
     }
   }
+  
   @override
   Widget build(BuildContext context) {
     // RandNum();
